@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: book
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/db
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345
+jpa:
+  default:
+    packages-to-scan:
+      - ‘com.example’
+    properties:
+      hibernate:
+      hbm2ddl:
+        auto: update
+      show_sql: true
+
+
+
+
